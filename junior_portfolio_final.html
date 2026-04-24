@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Junior — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:#c0c0c0;font-family:Arial,sans-serif;overflow-x:hidden}
+
+/* PAGE WRAPPER */
+.page{
+  width:780px;
+  min-height:520px;
+  margin:0 auto 40px;
+  background:#b8b8b8;
+  border:2px solid #888;
+  position:relative;
+  overflow:hidden;
+}
+
+/* DIAGONAL SLABS */
+
+
+
+/* NAV */
+.nav{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+  padding:8px 20px;
+  border-bottom:1px solid #ccc;
+}
+.nav-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:1px;
+  font-size:11px;
+  color:#222;
+  cursor:pointer;
+}
+.nav-item.active{font-weight:bold;text-decoration:underline}
+.nav-icon{width:20px;height:20px;display:flex;align-items:center;justify-content:center}
+.nav-icon svg{width:18px;height:18px}
+
+/* CONTENT */
+.content{padding:16px 20px 10px;display:flex;gap:18px;align-items:center;}
+
+/* TEXT BOX */
+.text-box{
+  background:#d2d2d2;
+  border:2px solid #aaa;
+  border-radius:14px;
+  padding:16px 18px;
+  width:285px;
+  flex-shrink:0;
+}
+.text-box p{
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:14.5px;
+  font-weight:bold;
+  line-height:1.7;
+  color:#111;
+}
+
+/* PHOTO BOX */
+.photo-box{
+  background:#888;
+  border:2px solid #555;
+  border-radius:14px;
+  width:px;
+  height:182px;
+  flex-shrink:0;
+  margin-left:auto;
+  overflow:hidden;
+}
+.photo-box img{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center top;
+  filter:grayscale(100%);
+  display:block;
+}
+
+/* BUTTONS */
+.btn-row{display:flex;gap:18px;padding:12px 20px 8px}
+.btn{
+  background:#d4d4d4;
+  border:2px solid #999;
+  border-radius:20px;
+  padding:7px 28px;
+  font-family:Georgia,serif;
+  font-size:13.5px;
+  font-weight:bold;
+  color:#111;
+  cursor:pointer;
+}
+.btn:hover{background:#bbb}
+
+/* CONTACT STRIP */
+.contact-strip{
+  padding:6px 20px 10px;
+  border-top:1px solid #ccc;
+}
+.contact-label{font-size:13px;font-weight:bold;color:#111;margin-bottom:6px}
+.contact-items{display:flex;gap:36px;align-items:center}
+.contact-item{display:flex;align-items:center;gap:7px;font-size:12.5px;font-weight:bold;color:#111}
+.contact-item svg{width:20px;height:20px;flex-shrink:0}
+
+</style>
+</head>
+<body>
+
+
+<!-- ===== PAGE 1: HOME ===== -->
+<div class="page">
+  <div class="slab-tr"></div><div class="slab-bl"></div>
+  <div class="bottom-bar"></div>
+  <div class="card">
+    <div class="nav"><div class="nav-item active"><div class="nav-icon"><img src="Assets/Home.png"></div>Home</div><div class="nav-item"><div class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>About</div><div class="nav-item"><div class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div>Skills</div><div class="nav-item"><div class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div>Services</div><div class="nav-item"><div class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .96h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>Contact</div></div>
+    <div class="content">
+      <div class="text-box">
+        <p>Hi, I'm Junior<br>Passionate about building<br>modern websites and<br>designing clean, user-<br>friendly interfaces.</p>
+      </div>
+      <div class="photo-box">
+        <img src="Assets/Profile.png" width="50" height="100"/>
+      </div>
+    </div>
+    <div class="btn-row">
+      <button class="btn">Hire me!</button>
+      <button class="btn">Donate</button>
+    </div>
+    <div class="contact-strip">
+  <div class="contact-label">Contact me:</div>
+  <div class="contact-items">
+    <div class="contact-item"><img src="Assets/Call.png" alt="Call" width="20" height="20"/> +250 791 166 098</div>
+    <div class="contact-item"><img src="Assets/Email.png" alt="Email" width="20" height="20"/> junimaru2469@gmail.com</div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
